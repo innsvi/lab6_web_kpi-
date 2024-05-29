@@ -1,4 +1,4 @@
-//ЗАВДАННЯ 3
+//ЗАВДАННЯ 5
 
 const fruits = [
     { name: "apple", price: 200 },

@@ -1,4 +1,4 @@
-//ЗАВДАННЯ 2
+// ЗАВДАННЯ 3
 
 const medicines = {
     Агалгін: new Date("2022-05-01"),
@@ -8,7 +8,6 @@ const medicines = {
     Аспаркам: new Date("2024-04-18")
 };
 
-// Отримуємо поточну дату
 const currentDate = new Date();
 
 // Отримуємо масив медикаментів, у яких строк зберігання ще не пройшов
@@ -17,5 +16,11 @@ const validMedicines = Object.entries(medicines)
     .sort(([, dateA], [, dateB]) => dateA - dateB)
     .map(([name]) => name);
 
-// Виводимо результат у консоль
+
 console.log("Медикаменти, строк зберігання яких ще не пройшов, у хронологічному порядку:", validMedicines);
+
+// Масив з назвами препаратів
+const medicineNames = Object.keys(medicines);
+
+// Виводимо назви препаратів
+console.log("Назви препаратів:", medicineNames);
